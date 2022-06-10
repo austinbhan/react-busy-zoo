@@ -2,7 +2,6 @@ import './App.css';
 import { useState } from 'react';
 import SignSection from './SignSection';
 import AnimalParade from './AnimalParade';
-import AnimalSize from './AnimalSize';
 
 function App() {
   const [animalArray, setAnimalArray] = useState(['fish', 'raccoon', 'skunk', 'octopus']);
@@ -34,7 +33,6 @@ function App() {
           <button onClick={handleSkunk}>Skunk</button>
           <button onClick={handleOctopus}>Octopus</button>
         </div>
-        <AnimalSize />
       </header>
     </div>
   );
