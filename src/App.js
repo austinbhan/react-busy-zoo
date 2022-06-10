@@ -10,6 +10,18 @@ function App() {
     setAnimalArray([...animalArray, 'fish']);
   }
 
+  function handleRaccoon() {
+    setAnimalArray([...animalArray, 'raccoon']);
+  }
+  function handleSkunk() {
+    setAnimalArray([...animalArray, 'skunk']);
+  }
+  function handleOctopus() {
+    setAnimalArray([...animalArray, 'octopus']);
+  }
+
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +29,9 @@ function App() {
         <AnimalParade animals={animalArray}/>
         <div className='buttons'>
           <button onClick={handleFish}>Fish</button>
+          <button onClick={handleRaccoon}>Raccoon</button>
+          <button onClick={handleSkunk}>Skunk</button>
+          <button onClick={handleOctopus}>Octopus</button>
         </div>
       </header>
     </div>
