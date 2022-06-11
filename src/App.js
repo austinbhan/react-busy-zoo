@@ -6,6 +6,7 @@ import AnimalParade from './AnimalParade';
 function App() {
   const [animalArray, setAnimalArray] = useState(['fish', 'raccoon', 'skunk', 'octopus']);
   const [dundeeSize, setDundeeSize] = useState(10);
+  const [irwinSize, setIrwinSize] = useState(10);   
 
   function handleFish() {
     setAnimalArray([...animalArray, 'fish']);
@@ -40,6 +41,13 @@ function App() {
             <div className='buttons'>
               <button onClick={() => setDundeeSize(dundeeSize - 1)}>That&apos;s not a knife!</button>
               <button onClick={() => setDundeeSize(dundeeSize + 1)}>Now That&apos;s a knife!</button>
+            </div>
+          </div>
+          <div className="irwin">
+            <img src="crocodile-hunter.png" style={{ width: `${irwinSize * 10}px` }} />
+            <div className="buttons">
+              <button onClick={() => setIrwinSize(irwinSize - 1)}>Crikey!</button>
+              <button onClick={() => setIrwinSize(irwinSize + 1)}>Lyuukathat beeoouty</button>
             </div>
           </div>
         </div>
