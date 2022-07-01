@@ -5,7 +5,7 @@ import AnimalParade from './AnimalParade';
 import BasicButtons from './CustomButtonMUI';
 
 import Admin from './Admin/Admin';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 
 function App() {
@@ -32,12 +32,15 @@ function App() {
 
 
   return (
-
-    <Router>
-      <Routes>
-        <Route path='/Admin' element={<Admin />} />
-      </Routes>
-
+    <>
+      <Router>
+        <Link to='Admin'>Admin Page</Link>
+        <Link to='/'> Home</Link>
+        <Routes>
+          <Route path='Admin' element={<Admin />} />
+        </Routes>
+      </Router>
+      
       <div className="App">
         <header className="App-header">
           <SignSection />
@@ -66,7 +69,8 @@ function App() {
           </div>
         </header>
       </div>
-    </Router>
+
+    </>
 
   );
 }
