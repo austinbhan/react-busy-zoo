@@ -1,5 +1,5 @@
 import Sign from './Sign';
-import CustomButton from './CustomButton';
+import BasicButtons from './CustomButtonMUI';
 import React, { useState } from 'react';
 
 export default function SignSection() {
@@ -9,8 +9,8 @@ export default function SignSection() {
     <section className = 'sign'>
       <Sign isOpen={isOpen} />
       <div>
-        <CustomButton onClick={() => setIsOpen(false)}>Close Zoo</CustomButton>
-        <CustomButton onClick={() => setIsOpen(true)}>Open Zoo</CustomButton>
+        <BasicButtons onClick={() => setIsOpen(false)}>Close Zoo</BasicButtons>
+        <BasicButtons onClick={() => setIsOpen(true)}>Open Zoo</BasicButtons>
       </div>
 
     </section>

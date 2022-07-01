@@ -14,3 +14,4 @@ test('pressing the open button should render open sign text', () => {
 
   expect(updatedSign).toBeInTheDocument();
 });
+
