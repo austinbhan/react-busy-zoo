@@ -1,5 +1,6 @@
 // Mockaroo and Victory Data Go Here
-const namesTable = [{
+
+export const namesTable = [{
   'id': 1,
   'first_name': 'Daron',
   'last_name': 'Sawnwy'
@@ -204,7 +205,7 @@ const fakeCreditCards = [{
   'ip_address': '204.133.160.163'
 }];
 
-const chartData = [
+export const chartData = [
   { quarter: 1, earnings: 13000 },
   { quarter: 2, earnings: 16500 },
   { quarter: 3, earnings: 14250 },

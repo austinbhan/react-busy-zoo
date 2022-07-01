@@ -1,9 +1,11 @@
 import React from 'react';
+import { chartData } from './Data';
+import { VictoryBar, VictoryChart } from 'victory';
 
 export default function MyCharts() {
   return (
-    <div>
-            MyCharts has been successfully imported
-    </div>
+    <VictoryChart>
+      <VictoryBar data={chartData} x="quarter" y="earnings" />
+    </VictoryChart>
   );
 }
