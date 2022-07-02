@@ -1,25 +1,20 @@
-import React from 'react';
+import * as React from 'react';
 import { namesTable } from './Data';
+import { DataGrid } from '@mui/x-data-grid';
 
-export default function MyTable() {
+const columns = [
+  { field: 'id', headerName: 'ID', width: 70 },
+  { field: 'first_name', headerName: 'First name', width: 130 },
+  { field: 'last_name', headerName: 'Last name', width: 130 },
+];
 
-  
-  console.log(namesTable);
-  
+export default function DataTable() {
   return (
-    <>
-      <div>
-        {
-          namesTable.map((person, i) => <p key={person.first_name + i}>
-            {person.id}
-            {person.first_name}
-            {person.last_name} </p>)
-        }
-        Table One
-      </div>
-      <div>
-        Table Two
-      </div>
-    </>
+    <div style={{ height: 400, width: '100%' }}>
+      <DataGrid
+        rows={namesTable}
+        columns={columns}
+      />
+    </div>
   );
 }
