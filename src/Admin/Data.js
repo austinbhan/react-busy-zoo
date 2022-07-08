@@ -83,7 +83,7 @@ export const namesTable = [{
 }
 ];
 
-const fakeCreditCards = [{
+export const fakeCreditCards = [{
   'id': 1,
   'first-name': 'Charil',
   'credit-card': '30035249929597',
@@ -210,4 +210,12 @@ export const chartData = [
   { quarter: 2, earnings: 16500 },
   { quarter: 3, earnings: 14250 },
   { quarter: 4, earnings: 19000 }
+];
+
+export const chartDataTwo = [
+  { name: 'John', age: 1 },
+  { name: 'Jacob', age: 2 },
+  { name: 'Jingle', age: 3 },
+  { name: 'Heimer', age: 4 },
+  { name: 'Smith', age: 5 }
 ];

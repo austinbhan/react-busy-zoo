@@ -8,7 +8,7 @@ const columns = [
   { field: 'last_name', headerName: 'Last name', width: 130 },
 ];
 
-export default function DataTable() {
+export function DataTable() {
   return (
     <div style={{ height: 400, width: '100%' }}>
       <DataGrid
@@ -19,4 +19,3 @@ export default function DataTable() {
   );
 }
 
-// Make Another Table from Here
